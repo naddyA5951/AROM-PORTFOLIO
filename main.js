@@ -837,3 +837,39 @@ counters.forEach(
   }
 
 );
+/* ==========================================
+   GET IN TOUCH BUTTON
+========================================== */
+
+const getInTouchButton = document.querySelector(".get-in-touch-btn");
+
+if (getInTouchButton) {
+  getInTouchButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const contactSection = document.getElementById("contact");
+
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+}
+const exploreWorkButton = document.querySelector(".explore-work-btn");
+
+if (exploreWorkButton) {
+  exploreWorkButton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const projectsSection = document.getElementById("projects");
+
+    if (projectsSection) {
+      projectsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+}
