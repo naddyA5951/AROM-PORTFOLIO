@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="AROMA - Developer, Digital Creator and Adventure Explorer"
+  >
+
+  <title>AROMA | Developer & Creator</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+
+  <div class="loader">
+
+    <div class="loader-logo">
+      AROMA<span>.</span>
+    </div>
+
+    <div class="loader-line"></div>
+
+  </div>
+
+
+  <!-- CUSTOM CURSOR -->
+
+  <div class="cursor-glow"></div>
+
+
+  <!-- THREE JS BACKGROUND -->
+
+  <canvas id="bg-canvas"></canvas>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar glass-effect">
+
+    <a href="#home" class="logo">
+      AROMA<span>.</span>
+    </a>
+
+
+    <div class="nav-links">
+
+      <a href="#about">About</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <button class="mobile-menu-btn">
+
+      <i data-lucide="menu"></i>
+
+    </button>
+
+  </nav>
+
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container">
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero-section">
+
+
+      <div class="hero-content reveal">
+
+
+        <div class="badge">
+
+          <span class="badge-dot"></span>
+
+          AVAILABLE FOR PROJECTS
+
+        </div>
+
+
+        <h1 class="hero-title">
+
+          Building
+
+          <span class="gradient-text">
+
+            Digital Experiences
+
+          </span>
+
+          Beyond The Ordinary.
+
+        </h1>
+
+
+        <p class="hero-desc">
+
+          I'm AROMA — a developer and digital creator crafting
+          immersive websites, interactive 3D experiences,
+          powerful web applications and unforgettable digital products.
+
+        </p>
+
+
+
+        <!-- STATS -->
+
+        <div class="stats-grid glass-effect">
+
+
+          <div class="stat-item">
+
+            <span class="stat-number counter" data-target="15">
+
+              0
+
+            </span>
+
+            <span class="stat-label">
+
+              Projects
+
+            </span>
+
+          </div>
+
+
+          <div class="stat-item">
+
+            <span class="stat-number">
+
+              3D
+
+            </span>
+
+            <span class="stat-label">
+
+              Experiences
+
+            </span>
+
+          </div>
+
+
+          <div class="stat-item">
+
+            <span class="stat-number">
+
+              ∞
+
+            </span>
+
+            <span class="stat-label">
+
+              Creativity
+
+            </span>
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- BUTTONS -->
+
+        <div class="hero-actions">
+
+
+          <a href="#projects" class="btn btn-primary">
+
+            Explore My Work
+
+            <i data-lucide="arrow-right"></i>
+
+          </a>
+
+
+          <a href="#contact" class="btn btn-secondary">
+
+            Get In Touch
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- HERO IMAGE -->
+
+      <div class="hero-image-container reveal">
+
+
+        <div class="orbit orbit-one"></div>
+
+        <div class="orbit orbit-two"></div>
+
+
+        <div class="floating-tag tag-one">
+
+          <i data-lucide="mountain"></i>
+
+          Explorer
+
+        </div>
+
+
+        <div class="floating-tag tag-two">
+
+          <i data-lucide="code-2"></i>
+
+          Developer
+
+        </div>
+
+
+        <div class="image-glow"></div>
+
+
+        <div class="image-wrapper">
+
+          <img
+            src="images/hero.jpg"
+            alt="Aroma"
+            class="hero-img"
+          >
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about-section reveal">
+
+
+      <div class="section-header">
+
+        <span class="section-label">
+
+          ABOUT ME
+
+        </span>
+
+
+        <h2>
+
+          Code. Create. Explore.
+
+        </h2>
+
+      </div>
+
+
+      <div class="about-grid">
+
+
+        <div class="about-card glass-effect">
+
+          <i data-lucide="code-2"></i>
+
+          <h3>
+
+            Development
+
+          </h3>
+
+          <p>
+
+            Building responsive websites,
+            powerful applications and scalable
+            digital experiences.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="about-card glass-effect">
+
+          <i data-lucide="box"></i>
+
+          <h3>
+
+            3D Experiences
+
+          </h3>
+
+          <p>
+
+            Creating immersive WebGL scenes,
+            interactive environments and futuristic interfaces.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="about-card glass-effect">
+
+          <i data-lucide="mountain"></i>
+
+          <h3>
+
+            Adventure
+
+          </h3>
+
+          <p>
+
+            Exploring mountains, capturing
+            expeditions and turning experiences
+            into visual stories.
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="skills-section reveal">
+
+
+      <div class="section-header">
+
+        <span class="section-label">
+
+          TECHNOLOGIES
+
+        </span>
+
+
+        <h2>
+
+          My Digital Arsenal
+
+        </h2>
+
+
+        <p>
+
+          Technologies I use to transform ideas into reality.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="skills-wrapper">
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="box"></i>
+
+          Three.js / WebGL
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="code-2"></i>
+
+          JavaScript
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="atom"></i>
+
+          React.js
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="server"></i>
+
+          Node.js
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="database"></i>
+
+          MongoDB
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="terminal"></i>
+
+          Python
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="palette"></i>
+
+          UI / UX
+
+        </div>
+
+
+        <div class="skill-pill">
+
+          <i data-lucide="git-branch"></i>
+
+          GitHub
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="projects-section reveal">
+
+
+      <div class="section-header">
+
+        <span class="section-label">
+
+          PORTFOLIO
+
+        </span>
+
+
+        <h2>
+
+          Featured Creations
+
+        </h2>
+
+
+        <p>
+
+          Selected projects and experimental experiences.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card glass-effect tilt-card">
+
+
+          <div class="project-number">
+
+            01
+
+          </div>
+
+
+          <div class="card-body">
+
+
+            <div class="icon-box cyan">
+
+              <i data-lucide="sparkles"></i>
+
+            </div>
+
+
+            <h3>
+
+              3D Interactive Canvas
+
+            </h3>
+
+
+            <p>
+
+              An immersive WebGL experience featuring
+              real-time animation, particles,
+              geometry and interactive camera movement.
+
+            </p>
+
+
+          </div>
+
+
+          <div class="card-footer">
+
+
+            <span class="tech-tag cyan-text">
+
+              THREE.JS
+
+            </span>
+
+
+            <a href="#" class="demo-link">
+
+              Explore
+
+              <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card glass-effect tilt-card">
+
+
+          <div class="project-number">
+
+            02
+
+          </div>
+
+
+          <div class="card-body">
+
+
+            <div class="icon-box emerald">
+
+              <i data-lucide="mountain"></i>
+
+            </div>
+
+
+            <h3>
+
+              Alpine Explorer
+
+            </h3>
+
+
+            <p>
+
+              A mountain expedition platform featuring
+              routes, elevation information,
+              visual storytelling and exploration tools.
+
+            </p>
+
+
+          </div>
+
+
+          <div class="card-footer">
+
+
+            <span class="tech-tag emerald-text">
+
+              REACT
+
+            </span>
+
+
+            <a href="#" class="demo-link">
+
+              Explore
+
+              <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card glass-effect tilt-card">
+
+
+          <div class="project-number">
+
+            03
+
+          </div>
+
+
+          <div class="card-body">
+
+
+            <div class="icon-box indigo">
+
+              <i data-lucide="server"></i>
+
+            </div>
+
+
+            <h3>
+
+              Full Stack Platform
+
+            </h3>
+
+
+            <p>
+
+              A scalable web application with authentication,
+              APIs, database integration and real-time functionality.
+
+            </p>
+
+
+          </div>
+
+
+          <div class="card-footer">
+
+
+            <span class="tech-tag indigo-text">
+
+              NODE.JS
+
+            </span>
+
+
+            <a href="#" class="demo-link">
+
+              Explore
+
+              <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact-section glass-effect reveal">
+
+
+      <div class="contact-orbit"></div>
+
+
+      <div class="icon-box cyan contact-icon">
+
+        <i data-lucide="send"></i>
+
+      </div>
+
+
+      <span class="section-label">
+
+        CONTACT
+
+      </span>
+
+
+      <h2>
+
+        Let's Create Something Extraordinary.
+
+      </h2>
+
+
+      <p>
+
+        Have an idea, project or collaboration in mind?
+        Let's build something incredible together.
+
+      </p>
+
+
+      <a
+        href="mailto:your-email@example.com"
+        class="btn btn-primary contact-btn"
+      >
+
+        <i data-lucide="mail"></i>
+
+        Get In Touch
+
+      </a>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+
+      © 2026 AROMA.
+
+      Designed & Developed with creativity.
+
+    </p>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="main.js"></script>
+
+
+</body>
+</html>
